@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Raccooonblog</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- GOT NO TIME FOR WEBPACK AND BABEL,
+  SO AGAIN I'M GOING TO DO AS MY GRANDFATHER DID,
+  AND MY JS MODULES WILL BE THERE AGAIN.
+  SORRY FOR THAT. I'LL NEVER USE IT IN PRODUCTION. -->
+  <script src="./assets/js/components/tabs.js"></script>
+</head>
+<body>
+  <header class="flex flex-column">
+    <div class="header-logo flex flex-justify-center flex-align-center">
+      <h1>racco&nbsp;&nbsp;&nbsp;&nbsp;nblog</h1>
+    </div>
+    <div class="header-bottom flex" id="header-bottom">
+      <button class="flex flex-justify-center flex-align-center btn-tablet" type="button" name="about">
+        <img src="assets/img/mobile/question-mark.png" alt="about">
+      </button>
+      <button class="flex flex-justify-center flex-align-center btn-tablet" type="button" name="info">
+        <img src="assets/img/mobile/exclamation-mark.png" alt="info">
+      </button>
+      <button class="flex flex-justify-center flex-align-center btn-mobile" type="button" name="tags">
+        <img src="assets/img/mobile/tag.png" alt="tags">
+      </button>
+      <button class="flex flex-justify-center flex-align-center btn-mobile" type="button" name="navigation-menu">
+        <img src="./assets/img/mobile/menu.png" alt="navigation-menu">
+      </button>
+      <nav class="flex flex-align-center flex-justify-center nav-mobile-hidden" id="top-nav">
+        <ul class="flex flex-justify-between">
+          <li><a class="flex flex-align-center" href="#">javascript</a></li>
+          <li><a class="flex flex-align-center" href="#">css</a></li>
+          <li class=""><a class="flex flex-align-center nav--active" href="#">latest</a></li>
+          <li><a class="flex flex-align-center" href="#">html</a></li>
+          <li><a class="flex flex-align-center" href="#">design</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-push no-push" id="push"></div>
+
+  <div class="wrapper flex flex-justify-around">
+    <main class="flex flex-column">
+      <section class="post">
+        <img src="./assets/img/posts/post1.jpg" alt="flowers">
+        <h2>Blogotitle of blogopost about blogoflowers</h2>
+        <div class="post-meta flex flex-justify-between flex-align-center">
+          <div class="post-date-and-author flex flex-justify-between">
+            <div class="post-date">22:58 Jan 01, 2014</div>
+            <div class="post-author">by <a href="#">E. Hyperraccoon</a></div>
+          </div>
+          <div class="post-social flex">
+            <a class="post-social--buttons post-social--facebook">16</a>
+            <a class="post-social--buttons post-social--googleplus">7</a>
+            <a class="post-social--buttons post-social--twitter">15</a>
+            <a class="post-social--buttons post-social--vk">16</a>
+            <a class="post-social--buttons post-social--yandex">1</a>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="post-social--tablet flex flex-column flex-align-end">
+          <a class="post-social--buttons post-social--facebook">16</a>
+          <a class="post-social--buttons post-social--googleplus">7</a>
+          <a class="post-social--buttons post-social--twitter">15</a>
+          <a class="post-social--buttons post-social--vk">16</a>
+          <a class="post-social--buttons post-social--yandex">1</a>
+        </div>
+      </section>
+      <section class="post">
+        <img src="./assets/img/posts/post2.jpg" alt="palette">
+        <h2>Blogotitle about colorful colors</h2>
+        <div class="post-meta flex flex-justify-between flex-align-center">
+          <div class="post-date-and-author flex flex-justify-between">
+            <div class="post-date">22:50 Jan 01, 2014</div>
+            <div class="post-author">by <a href="#">E. Hyperraccoon</a></div>
+          </div>
+          <div class="post-social flex">
+            <a class="post-social--buttons post-social--facebook">16</a>
+            <a class="post-social--buttons post-social--googleplus">7</a>
+            <a class="post-social--buttons post-social--twitter">15</a>
+            <a class="post-social--buttons post-social--vk">16</a>
+            <a class="post-social--buttons post-social--yandex">1</a>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="post-social--tablet flex flex-column flex-align-end">
+          <a class="post-social--buttons post-social--facebook">16</a>
+          <a class="post-social--buttons post-social--googleplus">7</a>
+          <a class="post-social--buttons post-social--twitter">15</a>
+          <a class="post-social--buttons post-social--vk">16</a>
+          <a class="post-social--buttons post-social--yandex">1</a>
+        </div>
+      </section>
+
+      <div class="preloader"><img src="./assets/img/loading.png" alt=""></div>
+    </main>
+    <aside class="flex flex-column">
+      <div class="aside-item" id="about">
+        <h3 class="flex flex-align-center">about</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="aside-item" id="info">
+        <h3 class="flex flex-align-center info">some info</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="aside-tags" id="aside-tags">
+        <a href="#">Raccoon</a>
+        <a href="#" class="tag-tablet">Raccoon</a>
+        <a href="#">Raccoon</a>
+        <a href="#" class="tag-desktop">Coon</a>
+        <a href="#">Dog</a>
+        <a href="#">Cat</a>
+        <a href="#">Developer</a>
+        <a href="#" class="tag-desktop">Raccoon</a>
+        <a href="#" class="tag-tablet">Cat</a>
+        <a href="#">Raccoon</a>
+        <a href="#" class="tag-desktop">Coon</a>
+        <a href="#">Dog</a>
+        <a href="#">Cat</a>
+        <a href="#">Developer</a>
+        <a href="#" class="tag-tablet">Raccoon</a>
+        <a href="#" class="tag-tablet">Raccoon</a>
+        <a href="#" class="tag-tablet">Raccoon</a>
+        <a href="#" class="tag-tablet">Raccoon</a>
+      </div>
+    </aside>
+  </div>
+
+  <script src="assets/js/index.js"></script>
+
+</body>
+</html>

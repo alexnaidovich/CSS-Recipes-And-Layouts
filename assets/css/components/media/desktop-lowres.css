@@ -1,0 +1,31 @@
+@media screen and (max-width: 984px) {
+  .wrapper {
+    width: 100%;
+  }
+  main {
+    width: calc(100% - 280px);
+  }
+  main img {
+    max-width: 100%;
+  }
+  .post h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .post-meta {
+    height: unset;
+    min-height: 40px;
+    flex-wrap: wrap;
+  }
+  .post-date-and-author div {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .post-author::before {
+    bottom: 10px;
+  }
+  .post-social {
+    margin-bottom: 2px;
+  }
+}
